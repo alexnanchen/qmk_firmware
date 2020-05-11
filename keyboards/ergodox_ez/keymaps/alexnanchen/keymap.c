@@ -69,7 +69,7 @@ enum custom_keycodes {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [BASE] = LAYOUT_ergodox(
     KC_ESCAPE,       KC_1,           KC_2,           KC_3,           KC_4,             KC_5,           KC_AUDIO_VOL_DOWN,
-    KC_GRAVE,        KC_Q,           KC_W,           KC_F,           KC_P,             KC_B,           TG(FR),
+    KC_GRAVE,        KC_Q,           KC_W,           KC_F,           KC_P,             KC_B,           KC_TAB,
     KC_MINUS,        KC_A,           LT(PROG, KC_R), LT(PUNCT,KC_S), LT(OTHER, KC_T),  KC_G,
     KC_LSHIFT,       KC_Z,           KC_X,           LCTL_T(KC_C),   LALT_T(KC_D),     KC_V,           KC_LGUI,
     KC_CIRC ,        KC_LCTRL,       ______________, KC_LEFT,        KC_RIGHT,
@@ -81,8 +81,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 
     KC_AUDIO_VOL_UP,  KC_6,          KC_7,           KC_8,             KC_9,           KC_0,           KC_DELETE,
-    ______________,   KC_J,          KC_L,           KC_U,             KC_Y,           KC_SCOLON,      KC_BSLASH,
-                      KC_M,          LT(PROG, KC_N), LT(PUNCT,KC_E),   LT(OTHER,KC_I), KC_O,           KC_TAB,
+    KC_TAB,           KC_J,          KC_L,           KC_U,             KC_Y,           KC_SCOLON,      KC_BSLASH,
+                      KC_M,          LT(PROG, KC_N), LT(PUNCT,KC_E),   LT(OTHER,KC_I), KC_O,           ______________,
     KC_LGUI,          KC_K,          LALT_T(KC_H),   LCTL_T(KC_COMMA),  KC_DOT,        KC_SLASH,       KC_RSHIFT,
     /*                            */ KC_UP,          KC_DOWN,          ______________, KC_LCTRL,       ______________,
 
@@ -111,7 +111,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ______________, ______________, ______________, KC_EQUAL       , ______________, ______________, ______________,
                     KC_KP_MINUS   , KC_KP_ASTERISK, ______________ , KC_KP_PLUS    , ______________, ______________,
     ______________, ______________, KC_SLASH      , ______________ , ______________, ______________, ______________,
-                                    ______________, ______________ , ______________, ______________, ______________,
+                                    KC_PGUP       , KC_PGDOWN      , ______________, ______________, ______________,
 
 
     ______________,   ______________,
@@ -122,7 +122,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [PROG] = LAYOUT_ergodox(
     RESET,          ______________, ______________, ______________, ______________, ______________, ______________,
-    ______________, ______________, ______________, KC_LCBR       ,   KC_RCBR,        KC_AMPR,      D_BRC_B,
+    ______________, ______________, KC_TILD       , KC_LCBR       ,   KC_RCBR,        KC_AMPR,      D_BRC_B,
     ______________, KC_HASH       , ______________, KC_LPRN       ,   KC_RPRN,        KC_DLR,
     ______________, ______________, ______________, KC_LBRACKET   ,   KC_RBRACKET,    KC_TILD,      D_PRN_B,
     ______________, ______________, ______________, ______________,   KC_CIRC,
