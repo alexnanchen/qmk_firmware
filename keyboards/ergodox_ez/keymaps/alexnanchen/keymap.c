@@ -125,7 +125,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     RESET,          ______________, ______________, ______________, ______________, ______________, ______________,
     ______________, ______________, KC_TILD       , KC_LCBR       ,   KC_RCBR,        KC_AMPR,      D_BRC_B,
     ______________, KC_HASH       , ______________, KC_LPRN       ,   KC_RPRN,        KC_DLR,
-    ______________, ______________, ______________, KC_LBRACKET   ,   KC_RBRACKET,    KC_TILD,      D_PRN_B,
+    ______________, ______________, KC_SLASH      , KC_LBRACKET   ,   KC_RBRACKET,    KC_TILD,      D_PRN_B,
     ______________, ______________, ______________, ______________,   KC_CIRC,
 
 
